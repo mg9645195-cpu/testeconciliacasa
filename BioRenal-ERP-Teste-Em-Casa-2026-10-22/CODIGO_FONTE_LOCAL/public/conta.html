@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>Minha conta · BioRenal ERP</title><link rel="icon" href="/img/icon-biorenal-erp.png" /><link rel="stylesheet" href="/css/login.css" /><script defer src="/js/accounts.js"></script></head>
+<body data-page="account">
+  <main class="auth-card">
+    <header class="auth-brand"><img src="/img/logo-biorenal.png" alt="" /><div><strong>Minha conta</strong><span id="account-name">BioRenal ERP</span></div></header>
+    <p><a href="/">← Voltar ao sistema</a></p>
+    <h1>Alterar senha</h1>
+    <form id="password-form">
+      <label>Senha atual<input name="current_password" type="password" autocomplete="current-password" required /></label>
+      <label>Nova senha (mínimo 12 caracteres)<input name="new_password" type="password" autocomplete="new-password" minlength="12" required /></label>
+      <label>Repita a nova senha<input name="confirm_password" type="password" autocomplete="new-password" minlength="12" required /></label>
+      <button type="submit">Alterar senha</button>
+    </form>
+    <p class="auth-message" id="auth-message" role="alert"></p>
+  </main>
+</body>
+</html>

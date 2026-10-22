@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Entrar · BioRenal ERP</title>
+  <link rel="icon" href="/img/icon-biorenal-erp.png" />
+  <link rel="stylesheet" href="/css/login.css" />
+  <script defer src="/js/login.js"></script>
+</head>
+<body>
+  <main class="auth-card">
+    <header class="auth-brand"><img src="/img/logo-biorenal.png" alt="BioRenal" /><div><strong>BioRenal ERP</strong><span>Administração financeira</span></div></header>
+    <h1 id="auth-title">Entrar no sistema</h1>
+    <p id="auth-description">Use sua conta individual para acessar os dados da clínica.</p>
+    <form id="login-form" hidden>
+      <label>Usuário<input name="username" autocomplete="username" required minlength="3" autofocus /></label>
+      <label>Senha<input name="password" type="password" autocomplete="current-password" required /></label>
+      <button type="submit">Entrar</button>
+    </form>
+    <form id="setup-form" hidden>
+      <label>Seu nome<input name="display_name" autocomplete="name" required maxlength="80" /></label>
+      <label>Usuário administrador<input name="username" autocomplete="username" required minlength="3" maxlength="32" /></label>
+      <label>Senha inicial (mínimo 12 caracteres)<input name="password" type="password" autocomplete="new-password" required minlength="12" /></label>
+      <label>Repita a senha<input name="confirm_password" type="password" autocomplete="new-password" required minlength="12" /></label>
+      <button type="submit">Criar acesso administrador</button>
+    </form>
+    <p class="auth-message" id="auth-message" role="alert" aria-live="polite"></p>
+    <footer>O primeiro administrador só pode ser criado neste computador.</footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>Usuários · BioRenal ERP</title><link rel="icon" href="/img/icon-biorenal-erp.png" /><link rel="stylesheet" href="/css/login.css" /><script defer src="/js/accounts.js"></script></head>
+<body data-page="users">
+  <main class="auth-card" style="width:min(100%,900px)">
+    <header class="auth-brand"><img src="/img/logo-biorenal.png" alt="" /><div><strong>Controle de acessos</strong><span>BioRenal ERP</span></div></header>
+    <p><a href="/">← Voltar ao sistema</a> · <a href="/conta.html">Minha senha</a></p>
+    <p>Crie uma conta para cada pessoa. <strong>Administrador</strong> gerencia usuários e dados; <strong>Operador</strong> trabalha no financeiro; <strong>Consulta</strong> apenas visualiza.</p>
+    <div style="overflow-x:auto"><table id="users-table" style="width:100%;border-collapse:collapse;text-align:left"></table></div>
+    <h1 id="form-title">Novo usuário</h1>
+    <form id="user-form">
+      <input type="hidden" name="id" />
+      <label>Nome exibido<input name="display_name" maxlength="80" required /></label>
+      <label>Usuário<input name="username" minlength="3" maxlength="32" required autocomplete="off" /></label>
+      <label>Perfil<select name="role"><option value="OPERADOR">Operador financeiro</option><option value="CONSULTA">Somente consulta</option><option value="ADMIN">Administrador</option></select></label>
+      <label>Senha <span id="password-hint">(mínimo 12 caracteres)</span><input name="password" type="password" minlength="12" autocomplete="new-password" /></label>
+      <label><input name="active" type="checkbox" checked style="width:auto;height:auto" /> Acesso ativo</label>
+      <div style="display:flex;gap:10px"><button type="submit">Salvar usuário</button><button type="button" id="clear-form" style="background:#475569">Limpar</button></div>
+    </form>
+    <p class="auth-message" id="auth-message" role="alert"></p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,16 @@
+BIORENAL ERP - TESTE EM CASA
+
+Para continuar o desenvolvimento no Codex de casa, leia também CONTINUIDADE_DO_PROJETO.txt. Esse arquivo registra o que já foi feito, as regras da clínica e as pendências.
+
+Esta pasta é uma cópia independente para testar o programa no seu computador de casa, sem configurar rede. Ela contém dados financeiros da clínica. Guarde-a somente em um computador particular e protegido por senha. Não envie a pasta por WhatsApp ou e-mail.
+
+1. Copie esta pasta inteira para um pendrive. No computador de casa, copie a pasta inteira do pendrive para a Área de Trabalho. Não retire arquivos de dentro dela.
+2. Abra a pasta copiada na Área de Trabalho e dê dois cliques em ABRIR_BIORENAL_TESTE.cmd. Uma janela preta pode aparecer por um instante e fechar; isso é normal. O programa continua em segundo plano e abre o navegador.
+3. Entre com o usuário e a senha do BioRenal ERP que você já criou. Nesta cópia já existe uma conta de administrador; não é uma instalação nova.
+4. Teste as telas no navegador. Para encerrar, dê dois cliques em FECHAR_BIORENAL_TESTE.cmd e depois feche a aba do navegador.
+
+IMPORTANTE: O que for alterado nesta cópia fica apenas no computador de casa. Não volta automaticamente para o PC da clínica. Não use lançamentos feitos em casa como dados oficiais, nem substitua o banco da clínica por este arquivo.
+
+O teste em casa é apenas local. A função de acesso por outro computador da rede da clínica não está configurada nesta cópia. Ela não contém a chave privada HTTPS do PC da clínica.
+
+Se o navegador não abrir automaticamente, execute ABRIR_BIORENAL_TESTE.cmd mais uma vez. Se surgir mensagem de erro, anote o texto. O arquivo data\servidor_local.log guarda os detalhes do servidor.

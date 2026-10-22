@@ -1,0 +1,37 @@
+:root { color-scheme: light; font: 15px system-ui, sans-serif; background: #f1f5f9; color: #0f172a; }
+* { box-sizing: border-box; }
+body { min-height: 100vh; margin: 0; display: grid; place-items: center; padding: 22px; }
+.auth-card { width: min(100%, 430px); background: #fff; border: 1px solid #dbe3ee; border-radius: 16px; box-shadow: 0 14px 44px #152e5018; padding: 30px; }
+.auth-brand { display: flex; align-items: center; gap: 12px; border-bottom: 2px solid #0056a6; padding-bottom: 18px; }
+.auth-brand img { width: 56px; height: 56px; object-fit: contain; }
+.auth-brand strong, .auth-brand span { display: block; }
+.auth-brand strong { color: #0056a6; font-size: 18px; }
+.auth-brand span { color: #475569; font-size: 12px; }
+h1 { font-size: 22px; margin: 24px 0 8px; }
+p { line-height: 1.5; color: #475569; }
+form { display: grid; gap: 15px; margin-top: 22px; }
+label { font-weight: 650; font-size: 13px; display: grid; gap: 6px; }
+input, select { width: 100%; height: 42px; border: 1px solid #bdcbdc; border-radius: 8px; padding: 8px 11px; font: inherit; background: #fff; color: #0f172a; }
+input:focus-visible, select:focus-visible, button:focus-visible { outline: 3px solid #93c5fd; outline-offset: 2px; }
+button { border: 0; border-radius: 8px; padding: 12px 16px; background: #0056a6; color: #fff; font: 700 14px system-ui; cursor: pointer; }
+button:hover { background: #03477f; }
+button:disabled { opacity: .6; cursor: wait; }
+.auth-message { min-height: 22px; color: #b42332; font-weight: 650; }
+.auth-message.success { color: #0056a6; }
+footer { border-top: 1px solid #e2e8f0; margin-top: 18px; padding-top: 13px; color: #64748b; font-size: 11px; }
+a { color: #0056a6; }
+th, td { border-bottom: 1px solid #e2e8f0; padding: 9px 6px; font-size: 13px; }
+form[hidden] { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root { color-scheme: dark; background: #090d16; color: #f8fafc; }
+  .auth-card { background: #111827; border-color: #334155; box-shadow: none; }
+  .auth-brand strong, .auth-message.success { color: #93c5fd; }
+  .auth-brand span, p, footer { color: #94a3b8; }
+  input, select { background: #1e293b; border-color: #475569; color: #f8fafc; }
+  button { background: #60a5fa; color: #081b34; }
+  button:hover { background: #93c5fd; }
+  footer { border-color: #334155; }
+  a { color: #93c5fd; }
+  th, td { border-color: #334155; }
+  .auth-message { color: #fda49a; }
+}
